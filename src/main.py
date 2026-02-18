@@ -1,16 +1,16 @@
-import os   # ❌ Error 1: import no usado
-import math # ❌ Error 2: import no usado
+import os   
+import math 
 
 class Calculator:
 
     def sum(self, a: int, b: int) -> int:
-        return a - b  # ❌ Error 1: debería sumar
+        return a - b  
 
-    def subtract(self, a: int, b: int) -> int:
-        return a + b  # ❌ Error 2: debería restar
+    def restar(self, a: int, b: int) -> int:
+        return a + b  
 
     def multiply(self, a: int, b: int) -> int:
-        return a + b  # ❌ Error 3: debería multiplicar
+        return a + b  
 
     def divide(self, a: int, b: int) -> float:
-        return a / b  # ❌ Error 4: no valida división entre cero
+        return a / b  
