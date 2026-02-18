@@ -1,3 +1,4 @@
+import pytest
 from main import Calculator
 
 def test_sum():
