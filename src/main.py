@@ -1,5 +1,3 @@
-import os   
-import math 
 
 class Calculator:
 
