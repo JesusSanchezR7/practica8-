@@ -28,3 +28,18 @@ jobs:
             - name: Test with pytest 
               working-directory: src  
               run: pytest tests.py
+              
+              # Login a GitHub Container Registry 
+            - name: Login to GitHub Container Registry
+              uses: docker/login-action@v3
+              with:
+                registry: ghcr.io
+                username: ${{ github.actor }}
+                password: ${{ secrets.GITHUB_TOKEN }}
+              
+              # Construccion y push de la imagen Docker a GitHub Container 
+            - name: Build and push
+              uses: docker/build-push-action@v6
+              with:
+                push: true
+                tags: ghcr.io/JesusSanchezR7/practica8-/latest
