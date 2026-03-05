@@ -49,3 +49,4 @@ jobs:
                     # ghcr.io/cuenta_usuario/nombre_repositorio:tag 
                     # la etiqueta "latest" se refiere a la última versión de la imagen.
                     # Puedes usar otras etiquetas para versiones específicas.
+                    
